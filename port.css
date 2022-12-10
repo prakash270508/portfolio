@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.container {
+    display: flex;
+    /* background-color: green; */
+}
+
+.sidebar {
+    background-color: rgb(207, 200, 200);
+    width: 14vw;
+    font-family: 'PT Serif', serif;
+    height: 100vh;
+    transition: transform 0.4s cubic-bezier(0, 0.54, 0.27, 1.62);
+}
+
+.sidebar nav {
+    padding: 50px;
+}
+
+.sidebar nav ul li {
+    list-style: none;
+    font-size: 20px;
+    padding-top: 55px;
+    text-decoration: none;
+}
+
+.sidebar nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    /* font-family: cursive; */
+}
+
+.main {
+    /* background-color: yellow; */
+    width: 84vw;
+}
+
+.contInfo {
+    display: flex;
+    /* background-color: rgb(105, 211, 230); */
+    height: 66vh;
+    width: 80vw;
+    margin: 106px auto;
+    justify-content: space-around;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    /* text-align: center; */
+    justify-content: center;
+    font-family: 'PT Serif', serif;
+}
+
+.hello {
+    font-size: 40px;
+    padding-left: 10px;
+}
+
+.name {
+    font-size: 75px;
+    font-family: 'PT Serif', serif;
+}
+
+.about {
+    font-size: 35px;
+}
+
+.moreabout {
+    font-size: 18px;
+    font-family: 'PT Serif', serif;
+    margin-top: 20px;
+}
+
+
+.buttons button {
+    font-size: 18px;
+    margin: 20px;
+    margin-top: 30px;
+    padding: 6px 10px;
+    background-color: dodgerblue;
+    color: white;
+    border: 1.5px solid black;
+    border-radius: 120px;
+    box-shadow: 2px 2px 2px black;
+    cursor: pointer;
+}
+
+
+.contInfo img {
+    height: 66vh;
+}
+
+.buttons button:hover {
+    background-color: white;
+    color: dodgerblue;
+}
+
+/* CONTACT SECTION */
+.contact {
+
+    position: relative;
+    margin: 80px 120px;
+}
+
+.contact h1 {
+    text-align: center;
+    font-family: sans-serif;
+    margin-bottom: 30px;
+}
+
+.contact::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+.contact label {
+    font-size: 25px;
+}
+
+/* .ct-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+} */
+
+.contact input,
+.contact textarea {
+    width: 93%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    box-shadow: 1px 1px 1px black;
+}
+
+.contact button {
+    font-size: 25px;
+    border-radius: 7px;
+    color: white;
+    background-color: red;
+    border: 2px solid black;
+    padding: 2px 10px;
+    text-align: center;
+    justify-content: center;
+    margin-left: 38%;
+    margin-top: 10px;
+}
+
+.contact button:hover {
+    background-color: white;
+    color: red;
+}
+
+.check input {
+    width: 2%;
+    box-shadow: none;
+    box-sizing: 20px;
+}
+
+.check {
+    font-size: 21px;
+}
+
+/* BLOG SECTION */
+.blog {
+    margin: 52px 19px;
+    padding-left: 70px;
+}
+
+.blogitems {
+    margin-top: 40px;
+}
+
+.blogitems p {
+    margin: 10px 5px;
+    font-weight: light;
+}
+
+.blogitems a {
+    text-decoration: none;
+    cursor: pointer;
+    color: rgb(75, 73, 112);
+}
+
+.blog h1 {
+    font-family: 'PT Serif', serif;
+}
+
+.blogitems h2 {
+    font-family: sans-serif;
+}
+
+.blogitems button {
+    /* font-size: 25px; */
+    padding: 5px;
+    border-radius: 7px;
+    color: white;
+    background-color: dodgerblue;
+    border: 2px solid black;
+    box-shadow: 1px 1px 1px black;
+}
+
+.blogitems button:hover {
+    background-color: white;
+    color: dodgerblue;
+}
+
+/* MY INTRO  */
+.skilbar {
+    display: flex;
+    flex-direction: row;
+}
+
+.bar {
+    height: 7px;
+    width: 310px;
+    background-color: red;
+    margin-left: 10px;
+}
+
+.skillbar {
+    display: flex;
+    align-items: center;
+
+}
+
+.skillcontainer {
+    margin: 20px 5px;
+}
+
+.box {
+    margin: 0px 8px;
+    margin-left: 20px;
+    height: 20px;
+    width: 20px;
+    background-color: red;
+}
+
+.boxbar {
+    display: flex;
+}
+
+.box2 {
+    height: 20px;
+    width: 20px;
+    background-color: rgb(228, 170, 77);
+}
+
+.box3 {
+    height: 20px;
+    width: 20px;
+    background-color: yellow;
+}
+
+.box4 {
+    height: 20px;
+    width: 20px;
+    background-color: rgb(170, 228, 77);
+}
+
+.box5 {
+    height: 20px;
+    width: 20px;
+    background-color: green;
+}
+
+.t90 {
+    background-color: green;
+}
+
+.t78 {
+    background-color: rgb(170, 228, 77);
+}
+
+.t20 {
+    background-color: red;
+}
+
+.t45 {
+    background-color: rgb(228, 170, 77);
+}
+
+.t60 {
+    background-color: yellow;
+}
+
+.introcont {
+    margin: 20px 20px;
+}
+
+.introcont h1 {
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    justify-content: center;
+    text-align: center;
+    font-family: cursive;
+    font-size: 30px;
+}
+
+.introcont h2 {
+    font-family: 'PT Serif';
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+.intro p {
+    font-weight: lighter;
+    margin-bottom: 30px;
+}
+
+.gallary h2 {
+    text-align: center;
+    justify-content: center;
+    font-size: 40px;
+    margin: 30px 0px;
+    padding-bottom: 30px;
+}
+
+.galcontainer {
+    display: flex;
+}
+
+.galcontainer img {
+    height: 220px;
+    width: auto;
+}
+
+.galcontainer a {
+    text-decoration: none;
+    font-size: 35px;
+    margin: 9px 27px;
+    font-family: monospace;
+    color: rgb(103 103 203);
+}
+
+.project2 img {
+    padding-left: 55px;
+}
+
+.foot {
+    font-size: 45px;
+    text-align: right;
+    padding-top: 50px;
+}
+
+/* Hamburger and cross */
+.hamburger {
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+}
+
+.cross {
+    margin-left: 170px;
+}
+
+.sidebarGo {
+    transform: translate(-444px, 0px);
+    position: absolute;
+}
+
+@media (max-width: 1450px) {
+    .contInfo img {
+        display: none;
+    }
+
+    .ham {
+        height: 60px;
+        width: 88px;
+    }
+    .sidebar{
+        width: 30vw;
+    }
+    .sidebar nav ul li{
+        margin-left: -20px;
+    }
+    .main{
+        font-size: 2vw;
+        margin-top: 100px;
+    }
+}    
